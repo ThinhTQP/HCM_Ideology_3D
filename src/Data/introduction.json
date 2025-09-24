@@ -1,0 +1,93 @@
+{
+  "links": [{ "externalUrl": "https://uclab.fh-potsdam.de/refa/", "linkValue": "Restaging Fashion" }],
+  "sections": [
+    {
+      "id": 1,
+      "title": "Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "Garments",
+      "description": "Dress research draws on visual, documentary, and material evidence. Textiles as cultural artefacts though are challenging as regards their presentation in the museum because of their vulnerability to light and hence the exhibition span is rather short and they are mostly stored in flat boxes in museum depots. In a collaboration between the Textiles, Clothing and Jewelry collection of Germanisches Nationalmuseum Nuremberg and the project <a href='https://uclab.fh-potsdam.de/refa/' target='_blank'>Restaging Fashion</a> a total of fifteen historical clothing items were selected for digitization."
+    },
+   
+
+    {
+      "id": 6,
+      "title": "",
+      "description": "3D Stories is a freely reusable prototype based on open source software (React Vite, React Three Fiber, Theatre JS, Blender). You can find the technical components of the project on the following <a href='https://github.com/uclab-potsdam/3dstories' target='_blank'>GitHub repository</a>"
+    },
+    {
+      "id": 7,
+      "title": "Team",
+      "team": [
+        {
+          "id": 1,
+          "uni": "UCLAB",
+          "role": "Fashion History",
+          "img": "img/team/sabine_de_gunther.jpg",
+          "name": "Sabine de Günther",
+          "link": "https://uclab.fh-potsdam.de/people/sabine-de-guenther/"
+        },
+
+        {
+          "id": 2,
+          "uni": "C²DH",
+          "role": "UI/UX Design/Development",
+          "img": "img/team/kirill_mitsurov.jpg",
+          "name": "Kirill Mitsurov",
+          "link": "https://www.c2dh.uni.lu/people/kirill-mitsurov"
+        },
+        {
+          "id": 3,
+          "uni": "UCLAB",
+          "role": "Research Supervision",
+          "img": "img/team/marian_dork.jpg",
+          "name": "Marian Dörk",
+          "link": "https://uclab.fh-potsdam.de/people/marian-doerk/"
+        },
+        {
+          "id": 4,
+          "uni": "C²DH",
+          "role": "Development",
+          "img": "img/team/daniele_guido.jpg",
+          "name": "Daniele Guido",
+          "link": "https://www.c2dh.uni.lu/people/daniele-guido"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Category",
+      "category": [
+        {
+          "id": 1,
+          "uni": "1",
+          "sub": "Khái niệm Đảng Cộng sản /n Tính tất yếu ra đời Đảng Cộng sản /n Vai trò của Đảng Cộng sản",
+          "img": "img/category/cate1.jpg",
+          "name": "Tính tất yếu và vai trò lãnh đạo của Đảng Cộng sản Việt Nam",
+          "link": "/vai-tro"
+        },
+
+        {
+          "id": 2,
+          "uni": "2",
+          "sub": "Đảng là đạo đức, là văn minh /n Những vấn đề nguyên tắc trong hoạt động của Đảng /n  Xây dựng đội ngũ cán bộ, đảng viên",
+          "img": "img/category/cate2.jpg",
+          "name": "Đảng phải trong sạch, vững mạnh ",
+          "link": "/dang"
+        },
+        {
+          "id": 3,
+          "uni": "3",
+          "sub": "Sự khác biệt của Đảng Cộng sản với các đảng chính trị khác trên thế giới ",
+          "img": "img/category/cate3.jpg",
+          "name": "Mở rộng",
+          "link": "/mo-rong"
+        }
+      ]
+    }
+    
+  ]
+}

@@ -1,0 +1,276 @@
+.FullscreenModelPage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.FullscreenModelPage .info-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+.FullscreenModelPage .info-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: auto;
+  padding: 1rem 0.7rem;
+  border-radius: 40px;
+  z-index: var(--z-info);
+  border: 1px solid rgba(var(--white-rgb), 0.3);
+  background-color: rgba(var(--dark-rgb), 0.4);
+}
+
+.FullscreenModelPage .mobile.info-panel {
+  justify-content: flex-end;
+  min-width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+  right: 0rem;
+}
+
+.FullscreenModelPage .mobile .info-panel-wrapper {
+  flex-direction: row;
+  padding: 0.6rem 1.8rem;
+  border-radius: 48px;
+  gap: 30px;
+}
+
+.FullscreenModelPage .info-panel .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FullscreenModelPage .info-panel .item span {
+  margin-top: 0.4rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.background-video>div {
+  position: fixed;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  /* overflow: hidden; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.background-video iframe {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, 0%);
+}
+
+.IntroPage {
+  position: relative;
+  z-index: 1;
+}
+
+.IntroPage~footer {
+  z-index: 1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-video iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .background-video iframe {
+    transform: translate(-80%, 0%);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .background-video iframe {
+    transform: translate(-90%, 0%);
+  }
+}
+
+.ContentManager .ScrollDownIndicator {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ContentManager.display-indicator .ScrollDownIndicator {
+  opacity: 0.6 !important;
+}
+
+.ContentManager .NavPrevNextButtons {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ContentManager.display-indicator .NavPrevNextButtons {
+  opacity: 1;
+}
+
+.ContentManager.index-page #slide-1 {
+  height: 100vh !important;
+}
+
+.ContentManager.index-page .slides:not(#slide-1) {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .ContentManager.index-page .slides:not(#slide-1) {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ContentManager.index-page .slides:not(#slide-1) {
+    min-width: 1024px;
+  }
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+.with-background {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.title-1 {
+  font-size: 3rem;
+}
+
+.title-2 {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+  font-size: 4.3rem;
+}
+
+.category {
+  position: relative;
+  max-width: fit-content;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  border-radius: 3rem;
+}
+
+.hero-button {
+  position: relative;
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%);
+  border: 2px solid #fbbf24;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: buttonFadeIn 1s ease-out 0.8s forwards;
+
+  /* Shine effect */
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+.hero-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: left 0.5s;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow:
+    0 8px 25px rgba(220, 38, 38, 0.4),
+    0 0 0 3px rgba(251, 191, 36, 0.3);
+  border-color: #f59e0b;
+  color: #f59e0b !important;
+}
+
+.hero-button:hover::before {
+  left: 100%;
+}
+
+.hero-button:active {
+  transform: translateY(0) scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* Pulse effect khi focus */
+.hero-button:focus {
+  outline: none;
+  animation: buttonPulse 2s infinite;
+}
+
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes buttonPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(251, 191, 36, 0);
+  }
+}
