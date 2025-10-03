@@ -141,7 +141,6 @@ const VaiTroCustom = ({ openModal, scrollToTop }) => {
                                         Là chính đảng của giai cấp công nhân, là đội tiên phong, bộ tham mưu chiến đấu, lãnh tụ chính trị
                                         của giai cấp công nhân.
                                     </li>
-                                    <li>Là đội tiên phong, bộ tham mưu chiến đấu, lãnh tụ chính trị của giai cấp công nhân.</li>
                                     <li>Bao gồm những bộ phận tiên tiến của giai cấp công nhân và các tầng lớp nhân dân lao động.</li>
                                     <li>Lấy chủ nghĩa Mác – Lênin làm nền tảng tư tưởng và kim chỉ nam cho hành động.</li>
                                     <li>Lấy nguyên tắc tập trung dân chủ làm nguyên tắc tổ chức cơ bản của mình.</li>
